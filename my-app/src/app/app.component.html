@@ -1,0 +1,8 @@
+<div class="h-screen w-screen">
+  <app-header (toggleSidenav)="updateSidenavStatus($event)"></app-header>
+
+  <div class="flex h-[calc(100%-4rem)]">
+    <app-sidenav [isShowSideNav]="isShowSideNav"></app-sidenav>
+    <app-dashboard class="w-full"></app-dashboard>
+  </div>
+</div>
